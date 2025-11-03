@@ -12,6 +12,6 @@ jobs:
       shell: pwsh
       run: |
           $metadata = Get-Content -Raw "${{ github.workspace }}/<productName>/metadata.json"
-          msstore submission updateMetadata <Store productId> $metadata
-          msstore submission publish <Store productId> 
+          msstore submission updateMetadata <ProductId> $metadata -v
+          msstore submission publish <ProductId> -v
  
